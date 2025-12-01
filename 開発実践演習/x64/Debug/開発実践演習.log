@@ -1,0 +1,8 @@
+﻿  開発実践演習.cpp
+C:\Users\mk15s\Downloads\開発実践演習\開発実践演習.cpp(26,26): warning C4474: 'fscanf_s': 書式文字列に渡された引数の数が多すぎます
+      C:\Users\mk15s\Downloads\開発実践演習\開発実践演習.cpp(26,26):
+      プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+  
+C:\Users\mk15s\Downloads\開発実践演習\開発実践演習.cpp(60,32): warning C4101: 'all_pay': ローカル変数は 1 度も使われていません。
+C:\Users\mk15s\Downloads\開発実践演習\開発実践演習.cpp(60,41): warning C4101: 'diffarence': ローカル変数は 1 度も使われていません。
+  開発実践演習.vcxproj -> C:\Users\mk15s\Downloads\開発実践演習\x64\Debug\開発実践演習.exe
