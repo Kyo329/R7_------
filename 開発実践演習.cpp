@@ -20,7 +20,9 @@ int main(void) {
 
 	rewind(file);
 
-	char isNULL;
+	int isNULL;
+	while ((isNULL = fgetc(file)) != EOF) { putchar(isNULL); }
+	
 	if (isNULL=fgetc(file) == EOF) {
 		printf("時給を入力してください。\n");
 		scanf_s("%lf", &pay);
@@ -30,25 +32,17 @@ int main(void) {
 		//pay = atof(str);
 	}
 	else {
+		//printf_s("%lf\n",str);
 		pay = atof(str);
-		//printf("時給を入力してください。\n");
-		//scanf_s("%lf", &pay);
-		//printf_s("%lf\n",pay);
-		//fseek(file, 0,SEEK_END);
-		//fprintf(file, "%lf\n", pay);
+		printf("１か月の労働時間を入力してください。\n");
+		scanf_s("%lf", &work_time);
+		printf("1か月の出勤日数を入力してください。\n");
+		scanf_s("%lf", &day_of_work);
+		printf("1回の出勤における交通費を入力してください。\n");
+		scanf_s("%lf", &toll);
 	}
 
 	fclose(file);
-	
-	
-	//printf("時給を入力してください。\n");
-	//scanf_s("%lf",&pay);
-	printf("１か月の労働時間を入力してください。\n");
-	scanf_s("%lf",&work_time);
-	printf("1か月の出勤日数を入力してください。\n");
-	scanf_s("%lf",&day_of_work);
-	printf("1回の出勤における交通費を入力してください。\n");
-	scanf_s("%lf",&toll);
 	
 	
 	printf("%lf\n", pay);
