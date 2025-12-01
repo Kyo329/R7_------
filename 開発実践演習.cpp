@@ -77,5 +77,3 @@ int main(void) {
 	delay(10000);
 	return 0;
 }
-
-printf("Hello\n");
