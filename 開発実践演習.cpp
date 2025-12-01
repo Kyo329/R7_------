@@ -65,9 +65,9 @@ int main(void) {
 
 	printf("1か月の給料は%d円です。\n交通費が%d円です。\n合計で%d円です。",(int)month_pay, (int)month_toll, (int)ALL);
 
-	FILE *file;
+	FILE *file2;
 	errno_t error2;
-	error2 = fopen_s(&file, "difarance.txt", "a+");
+	error2 = fopen_s(&file2, "difarance.txt", "a+");
 
 
 
