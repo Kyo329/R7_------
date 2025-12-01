@@ -20,7 +20,8 @@ int main(void) {
 
 	rewind(file);
 
-	if (fscanf_s(file, "&s",str ) == 0) {
+	char isNULL;
+	if (isNULL=fgetc(file) == EOF) {
 		printf("時給を入力してください。\n");
 		scanf_s("%lf", &pay);
 		printf_s("%lf\n", pay);
